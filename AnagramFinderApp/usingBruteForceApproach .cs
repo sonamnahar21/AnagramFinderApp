@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AnagramFinderApp
 {
-    class usingBruteForceApproch
+    class usingBruteForceApproach
     {
         private int noOfAnagrams;
 

@@ -10,7 +10,7 @@ namespace AnagramFinderApp
     {
         static void Main(string[] args)
         {
-            string fileName = "5000words.txt";
+            string fileName = "words.txt";
             //read data from file
             ArrayList wordsList = readInput(fileName);
             ArrayList wordListBackup = (ArrayList)wordsList.Clone();
@@ -21,9 +21,9 @@ namespace AnagramFinderApp
 
 
             // finding anagrams using BruteForceApproch.
-            Console.WriteLine("\n\nfinding anagrams using Brute Force Approch");
+            Console.WriteLine("\n\nfinding anagrams using Brute Force Approach ");
             double start = DateTime.Now.TimeOfDay.TotalMilliseconds;
-            usingBruteForceApproch usingBruteForceApproch = new usingBruteForceApproch();
+            usingBruteForceApproach usingBruteForceApproch = new usingBruteForceApproach();
             usingBruteForceApproch.findAnagram(wordListBackup);
             double end = DateTime.Now.TimeOfDay.TotalMilliseconds;
             double timeforBrute = end - start;
@@ -49,7 +49,7 @@ namespace AnagramFinderApp
             // to print logs 
             Console.WriteLine("\n\n\n\n\n\n\nWord count: " + wordCount);
             Console.WriteLine("Number of anagrams: " + usingLinq.NoOfAnagrams);
-            Console.WriteLine("\nTime required in milliseconds for Brute Force Approch :  " +Convert.ToInt32(timeforBrute));
+            Console.WriteLine("\nTime required in milliseconds for Brute Force Approach  :  " +Convert.ToInt32(timeforBrute));
             Console.WriteLine("\nTime required in milliseconds Dictionary:  " + Convert.ToInt32(timeforDictionary));
             Console.WriteLine("\nTime required in milliseconds for Linq:  " + Convert.ToInt32(timeforLinq));
             
