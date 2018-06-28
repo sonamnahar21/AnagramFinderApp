@@ -1,2 +1,2 @@
 # AnagramFinderApp
-program to find anagrams in file using Brute Force Approch,Dictionary and Linq C#
+Program to find anagrams in file using Brute Force Approach, Dictionary and Linq C#
