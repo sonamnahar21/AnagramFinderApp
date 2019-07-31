@@ -21,7 +21,7 @@ namespace AnagramFinderApp
 
 
             // finding anagrams using BruteForceApproch.
-            Console.WriteLine("\n\nfinding anagrams using Brute Force Approach ");
+            Console.WriteLine("\n\n\nfinding anagrams using Brute Force Approach ");
             double start = DateTime.Now.TimeOfDay.TotalMilliseconds;
             usingBruteForceApproach usingBruteForceApproch = new usingBruteForceApproach();
             usingBruteForceApproch.findAnagram(wordListBackup);
